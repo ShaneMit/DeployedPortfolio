@@ -12,9 +12,9 @@ app.get('*', (req, res) => {
   res.sendFile(join(__dirname, 'client', 'build', 'index.html'))
 })
 
-require('mongoose').createConnection('mongodb://localhost/tododb', {
+require('mongoose').connect('mongodb://localhost/tododb', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
-  .then(() => app.listen(process.env.PORT || 3000))
+  .then(() => app.listen(process.env.PORT || 3001))
   .catch(err => console.error(err))
