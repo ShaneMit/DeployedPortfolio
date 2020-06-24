@@ -22,14 +22,18 @@ const Item = props => {
   const classes = useStyles()
   return (
     <ListItem>
-      <ListItemAvatar>
-        <Avatar className={props.item.isDone ? classes.done : classes.notDone}>
+      <ListItemAvatar
+        onClick={() => props.handleUpdateItem(props.item._id, props.item.isDone)} >
+        <Avatar className={props.item.isDone ? classes.done : classes.notDone} >
           <DoneIcon />
         </Avatar>
       </ListItemAvatar>
       <ListItemText primary={props.item.text} />
       <ListItemSecondaryAction>
-        <IconButton edge="end" aria-label="delete">
+        <IconButton
+          edge="end"
+          aria-label="delete"
+          onClick={() => props.handleDeleteItem(props.item._id)} >
           <DeleteIcon />
         </IconButton>
       </ListItemSecondaryAction>

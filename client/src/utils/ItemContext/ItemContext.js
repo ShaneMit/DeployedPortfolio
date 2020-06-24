@@ -4,7 +4,9 @@ const ItemContext = createContext({
   item: '',
   items: [],
   handleInputChange: () => { },
-  handleAddItem: () => { }
+  handleAddItem: () => { },
+  handleUpdateItem: () => { },
+  handleDeleteItem: () => { }
 })
 
 export default ItemContext

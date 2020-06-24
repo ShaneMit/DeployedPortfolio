@@ -6,13 +6,23 @@ import Paper from '@material-ui/core/Paper'
 
 const FullList = () => {
 
-  const { items } = useContext(ItemContext)
+  const { 
+    items, 
+    handleUpdateItem,
+    handleDeleteItem
+  } = useContext(ItemContext)
 
   return (
     <Paper>
       <List>
         {
-          items.map(item => <Item item={item} />)
+          items.map(item => (
+            <Item
+              key={item._id}
+              item={item}
+              handleUpdateItem={handleUpdateItem}
+              handleDeleteItem={handleDeleteItem} />
+          ))
         }
       </List>
     </Paper>

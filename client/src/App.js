@@ -31,6 +31,32 @@ const App = () => {
       .catch(err => console.error(err))
   }
 
+  itemState.handleUpdateItem = (id, isDone) => {
+    axios.put(`/api/items/${id}`, {
+      isDone: !isDone
+    })
+      .then(() => {
+        const items = JSON.parse(JSON.stringify(itemState.items))
+        items.forEach(item => {
+          if (item._id === id) {
+            item.isDone = !isDone
+          }
+        })
+        setItemState({ ...itemState, items })
+      })
+      .catch(err => console.error(err))
+  }
+
+  itemState.handleDeleteItem = id => {
+    axios.delete(`/api/items/${id}`)
+      .then(() => {
+        const items = JSON.parse(JSON.stringify(itemState.items))
+        const itemsFiltered = items.filter(item => item._id !== id)
+        setItemState({ ...itemState, items: itemsFiltered })
+      })
+      .catch(err => console.error(err))
+  }
+
   useEffect(() => {
     axios.get('/api/items')
       .then(({ data }) => {
