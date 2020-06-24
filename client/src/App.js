@@ -5,6 +5,14 @@ import FullList from './components/FullList'
 import Navbar from './components/Navbar'
 import Grid from '@material-ui/core/Grid'
 import axios from 'axios'
+import ItemAPI from './utils/ItemAPI'
+
+const {
+  getItems,
+  createItem,
+  updateItem,
+  deleteItem
+} = ItemAPI
 
 const App = () => {
 
@@ -20,7 +28,7 @@ const App = () => {
   itemState.handleAddItem = event => {
     event.preventDefault()
     let items = JSON.parse(JSON.stringify(itemState.items))
-    axios.post('/api/items', {
+    createItem({
       text: itemState.item,
       isDone: false
     })
@@ -32,7 +40,7 @@ const App = () => {
   }
 
   itemState.handleUpdateItem = (id, isDone) => {
-    axios.put(`/api/items/${id}`, {
+    updateItem(id, {
       isDone: !isDone
     })
       .then(() => {
@@ -48,7 +56,7 @@ const App = () => {
   }
 
   itemState.handleDeleteItem = id => {
-    axios.delete(`/api/items/${id}`)
+    deleteItem(id)
       .then(() => {
         const items = JSON.parse(JSON.stringify(itemState.items))
         const itemsFiltered = items.filter(item => item._id !== id)
@@ -58,7 +66,7 @@ const App = () => {
   }
 
   useEffect(() => {
-    axios.get('/api/items')
+    getItems()
       .then(({ data }) => {
         setItemState({ ...itemState, items: data })
       })
