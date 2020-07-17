@@ -5,11 +5,18 @@ import CoZone from './../../assets/CoZone.jpg'
 import BudgetTracker from './../../assets/BudgetTracker.png'
 import FitnessTracker from './../../assets/FitnessTracker.png'
 import NoteTaker from './../../assets/NoteTaker.png'
-import ComingSoon from './../../assets/ComingSoon.png'
+import ReactFolio from './../../assets/ReactFolio.png'
 
 
 
 const myProjects = [
+  {
+    title: 'ReactFolio',
+    description: 'Collaberated with a team to create an application with React where a user can build a portfolio by selecting from customizable components.',
+    githubLink: 'https://github.com/JonahHouse/React-folio',
+    deployedLink: 'http://pacific-forest-54922.herokuapp.com/',
+    imageAddress: ReactFolio
+  },
   {
     title: 'Listivity',
     description: 'Collaborated with a group to create an application where a user can save activities that they would like to do by category. The user can then use a randomizer to be presented with a random activity from their list.',
@@ -45,13 +52,6 @@ const myProjects = [
     githubLink: 'https://github.com/ShaneMit/NoteTaker',
     deployedLink: 'https://salty-headland-29977.herokuapp.com/',
     imageAddress: NoteTaker
-  },
-  {
-    title: 'ReactFolio',
-    description: 'Collaberated with a team to create an application with React where a user can build a portfolio by selecting from prebuilt components.',
-    githubLink: 'Coming Soon',
-    deployedLink:'Coming Soon',
-    imageAddress: ComingSoon
   }
 
 
