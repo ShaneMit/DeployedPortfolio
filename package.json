@@ -1,5 +1,5 @@
 {
-  "name": "merntodo",
+  "name": "DeployedPortfolio",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/QFults/merntodo.git"
+    "url": "git+https://github.com/ShaneMit/DeployedPortfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/QFults/merntodo/issues"
+    "url": "https://github.com/ShaneMit/DeployedPortfolio/issues"
   },
-  "homepage": "https://github.com/QFults/merntodo#readme",
+  "homepage": "https://github.com/ShaneMit/DeployedPortfolio",
   "dependencies": {
     "concurrently": "^5.2.0",
     "dotenv": "^8.2.0",
