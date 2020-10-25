@@ -5,8 +5,8 @@ import Jumbotron from '../../components/Jumbotron'
 const AboutMe = () => {
   return(
    <> 
-    <Carousel/>
     <Jumbotron/>
+    <Carousel/> 
    </> 
   )
 }
