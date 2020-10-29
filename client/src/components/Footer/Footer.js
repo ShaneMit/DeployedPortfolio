@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div style={{paddingTop: '80px'}}>
       <nav className="fixed-bottom navbar navbar-dark bg-dark">
-        <span className="navbar-brand mb-0 h1">Thank you for visiting!</span>
+        <span className="navbar-brand mb-0 h1">Shane Mitchell, 2020</span>
       </nav>
     </div>
   )
