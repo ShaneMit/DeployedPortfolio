@@ -20,8 +20,8 @@ const myProjects = [
   {
     title: 'Listivity',
     description: 'Collaborated with a group to create an application where a user can save activities that they would like to do by category. The user can then use a randomizer to be presented with a random activity from their list.',
-    githubLink: 'https://github.com/ShaneMit/Project2',
-    deployedLink: 'https://radiant-woodland-54871.herokuapp.com/',
+    githubLink: 'https://github.com/ShaneMit/Listivity',
+    deployedLink: 'https://listivity.herokuapp.com/',
     imageAddress: Listivity
 
   },
