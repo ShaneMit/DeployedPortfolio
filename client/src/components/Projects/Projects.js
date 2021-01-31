@@ -4,7 +4,7 @@ import Listivity from './../../assets/Listivity.png'
 import CoZone from './../../assets/CoZone.jpg'
 import BudgetTracker from './../../assets/BudgetTracker.png'
 import FitnessTracker from './../../assets/FitnessTracker.png'
-import NoteTaker from './../../assets/NoteTaker.png'
+import BookNook from './../../assets/BookNookPre.jpg'
 import ReactFolio from './../../assets/ReactFolio.png'
 
 
@@ -33,6 +33,13 @@ const myProjects = [
     imageAddress: CoZone
   },
   {
+    title: 'Book Nook',
+    description: 'An application that allows the user to find information on books and provides a link to purchase them.',
+    githubLink: 'https://github.com/ShaneMit/BookNook',
+    deployedLink: 'https://cozybooknook.herokuapp.com/',
+    imageAddress: BookNook
+  },
+  {
     title: 'Budget Tracker',
     description: 'An Application for tracking budgets that includes functionality for when the user loses internet connection.',
     githubLink: 'https://github.com/ShaneMit/BudgetTracker',
@@ -45,15 +52,7 @@ const myProjects = [
     githubLink: 'https://github.com/ShaneMit/WorkoutTracker',
     deployedLink: 'https://vast-earth-06649.herokuapp.com/',
     imageAddress: FitnessTracker
-  },
-  {
-    title: 'Note Taker',
-    description: 'An application for the user to write and manage notes.',
-    githubLink: 'https://github.com/ShaneMit/NoteTaker',
-    deployedLink: 'https://salty-headland-29977.herokuapp.com/',
-    imageAddress: NoteTaker
   }
-
 
 ]
 
