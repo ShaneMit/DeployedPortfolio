@@ -13,8 +13,8 @@ const myProjects = [
   {
     title: 'ReactFolio',
     description: 'Collaberated with a team to create an application with React where a user can build a portfolio by selecting from customizable components.',
-    githubLink: 'https://github.com/JonahHouse/React-folio',
-    deployedLink: 'http://pacific-forest-54922.herokuapp.com/',
+    githubLink: 'https://github.com/ShaneMit/React-folio',
+    deployedLink: 'https://myreact-folio.herokuapp.com',
     imageAddress: ReactFolio
   },
   {
